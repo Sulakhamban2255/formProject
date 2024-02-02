@@ -1,1 +1,68 @@
-/* You can add global styles to this file, and also import other style files */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color:#4477e4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+     background-color: #e5e8ee;
+    color:#3b5998;
+}
+
+.social-buttons {
+    margin-top: 20px;
+}
+
+.social-button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.google-button {
+    background-color: #e5e8ee;
+    color:#3b5998;
+}
+.facebook-button {
+    background-color: #e5e8ee;
+    color:#3b5998;
+}
+

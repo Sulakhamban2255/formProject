@@ -1,0 +1,61 @@
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .confirm-info {
+    color: #666;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4477e4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e5e8ee;
+    color: #3b5998;
+  }
+  
+  hr {
+    margin: 15px 0;
+  }
+  
+  .resend-info {
+    text-align: center;
+    color: #666;
+  }
+  
+  .resend-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #e5e8ee;
+    color: #3b5998;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }

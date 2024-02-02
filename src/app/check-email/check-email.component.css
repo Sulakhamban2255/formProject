@@ -1,0 +1,39 @@
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  .email-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  .check-email-info {
+    color: #666;
+  }
+  
+  hr {
+    margin: 15px 0;
+  }
+  
+  .not-received-info {
+    color: #666;
+  }
+  
+  .resend-email-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #e5e8ee;
+    color: #3b5998;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }

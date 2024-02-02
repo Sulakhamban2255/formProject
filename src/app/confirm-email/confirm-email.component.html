@@ -1,0 +1,18 @@
+<div class="container">
+    <h2>Confirm Email</h2>
+    <p class="confirm-info">Check your email and enter confirmation code.</p>
+    
+    <form>
+      <div class="form-group">
+        <label for="confirmationCode">Enter Code:</label>
+        <input type="text" id="confirmationCode" name="confirmationCode" required />
+      </div>
+  
+      <button type="submit">Confirm Email</button>
+    </form>
+  
+    <hr>
+  
+    <p class="resend-info">Haven't seen your code?</p>
+    <button class="resend-btn" (click)="resendCode()">Resend Code</button>
+  </div>
