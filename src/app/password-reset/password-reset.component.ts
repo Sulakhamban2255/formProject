@@ -14,10 +14,10 @@ export class PasswordResetComponent implements OnInit {
   ngOnInit(): void {
     this.resetForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]]
-    });
+    })
   }
 
   backToLogin() {
     // Add logic to navigate back to the login page or handle it as per your application structure
     // Example: this.router.navigate(['/login']); // Don't forget to inject the Router service
-  }
+  }}
