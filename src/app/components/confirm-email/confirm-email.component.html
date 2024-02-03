@@ -1,0 +1,28 @@
+<!-- confirm-email.component.html -->
+
+<div class="container">
+  <h2>Confirm Email</h2>
+  <p class="confirm-info">Check your email and enter confirmation code.</p>
+
+  <form [formGroup]="confirmEmailForm" (ngSubmit)="confirmEmail()">
+    <div class="form-group">
+      <label for="confirmationCode">Enter Code:</label>
+      <input type="text" id="confirmationCode" name="confirmationCode" formControlName="confirmationCode" required />
+      <div *ngIf="confirmEmailForm.get('confirmationCode')?.touched" class="error">
+        {{ getError('confirmationCode') }}
+      </div>
+    </div>
+
+    <!-- General error container for the entire form -->
+    <div class="general-error-container" *ngIf="generalError">
+      <small class="text-danger">{{ generalError }}</small>
+    </div>
+
+    <button type="submit">Confirm Email</button>
+  </form>
+
+  <hr>
+
+  <p class="resend-info">Haven't seen your code?</p>
+  <button class="resend-btn" (click)="resendCode()">Resend Code</button>
+</div>

@@ -1,0 +1,37 @@
+<!-- login.component.html -->
+
+<div class="container">
+  <h2>Sign In</h2>
+  <p style="text-align: center; margin-top: 10px">
+    New to our Product <a routerLink="/create-account">Create an account </a>.
+  </p>
+  <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" formControlName="email" required />
+      <div *ngIf="signInForm.get('email')?.touched" class="error">
+        {{ getError('email') }}
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" formControlName="password" required />
+      <div *ngIf="signInForm.get('password')?.touched" class="error">
+        {{ getError('password') }}
+      </div>
+    </div>
+
+    <div class="remember-me">
+      <input type="checkbox" formControlName="rememberMe" id="rememberMe" />
+      <label for="rememberMe">Remember Me</label>
+    </div>
+
+    <button type="submit" [disabled]="signInForm.invalid">Sign In</button>
+  </form>
+
+  <p style="text-align: center; margin-top: 10px">
+    <a routerLink="/password-reset">Forgot your Password</a>.
+  </p>
+  <app-social-icons></app-social-icons>
+</div>

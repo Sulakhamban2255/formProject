@@ -1,0 +1,37 @@
+<div class="container">
+  <h2>Create Account</h2>
+  <p style="text-align: center; margin-top: 10px">
+    Have an account? <a routerLink="/login">Sign in</a>.
+  </p>
+  <form [formGroup]="createAccountForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" formControlName="email" required />
+      <div class="error-container"
+        *ngIf="createAccountForm.get('email')?.invalid && createAccountForm.get('email')?.touched">
+        <small class="text-danger" *ngIf="createAccountForm.get('email')?.hasError('required')">Email is
+          required.</small>
+        <small class="text-danger" *ngIf="createAccountForm.get('email')?.hasError('email')">Please enter a valid email
+          address.</small>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" formControlName="password" required />
+      <div class="error-container"
+        *ngIf="createAccountForm.get('password')?.invalid && createAccountForm.get('password')?.touched">
+        <small class="text-danger" *ngIf="createAccountForm.get('password')?.hasError('required')">Password is
+          required.</small>
+      </div>
+    </div>
+
+    <button type="submit" [disabled]="createAccountForm.invalid">Create Account</button>
+  </form>
+
+  <p style="text-align: center; margin-top: 10px">
+    By creating an account, you agree to our
+    <a>Terms of Service</a>.
+  </p>
+  <app-social-icons></app-social-icons>
+</div>
