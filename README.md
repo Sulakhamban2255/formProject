@@ -1,27 +1,53 @@
-# FormProject
+Angular Authentication Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+Welcome to the Angular Authentication Project! This project demonstrates user authentication features, including account creation, password reset, email confirmation, and social media login.
 
-## Development server
+Getting Started:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. Prerequisites:
+   - Node.js (https://nodejs.org/)
+   - Angular CLI: Install globally using npm install -g @angular/cli
 
-## Code scaffolding
+2. Clone the repository:
+   - Open your terminal or command prompt and run the following command:
+     
+     git clone https://github.com/Sulakhamban2255/formProject.git
+     
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3. Navigate to the project directory:
+   - In the terminal or command prompt, run:
+     
+     cd formProject
+     
 
-## Build
+4. Install dependencies:
+   - Run the following command:
+     
+     npm install
+     
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+5. Run the Application:
+   - Start the development server:
+     
+     ng serve --open
+     
+     The application will be accessible at http://localhost:4200/.
 
-## Running unit tests
+Project Structure:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- src/app: Contains Angular components, services, and modules.
+- src/assets: Holds static assets such as images and styles.
 
-## Running end-to-end tests
+Usage:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Open your web browser and go to http://localhost:4200/.
+2. Explore the authentication features, including account creation and password reset.
+3. Customize the project based on your requirements.
 
-## Further help
+Contributing:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Contributions are welcome! Fork the repository, create a branch, make your changes, and submit a pull request.
+
+License:
+
+This project is licensed under the MIT License - see the LICENSE.md file for details.
